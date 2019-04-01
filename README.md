@@ -27,7 +27,7 @@ Angular CLI
 
 Bootstrap
 ## Live Link
-url: 
+url: https://jamesanderegit.netlify.com/ 
 ## Support and contact details
 Contact me through email: jamesandere56@gmail.com
 ### License
