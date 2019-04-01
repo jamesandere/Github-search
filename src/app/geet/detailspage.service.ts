@@ -11,9 +11,7 @@ export class DetailspageService {
   constructor(private http: HttpClient) {
       this.username = 'jamesandere';
  }
- getprofileInfo(username) {
-   console.log(this.username);
-   
+ getprofileInfo(username) { 
    return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
 
  }
@@ -24,8 +22,6 @@ return this.http.get('https://api.github.com/users/' + this.username + '/repos?c
 
    }
 
- updateprofile(username: string) {
-   this.username = username;
- }
+
 
 }
