@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DetailspageService} from '../geet/detailspage.service';
 import {FormsModule} from '@angular/forms';
-// import * as $ from "jquery"
+
 
 @Component({
   selector: 'app-detailspage',
