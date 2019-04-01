@@ -19,5 +19,8 @@ h1{
     margin-top: -67px;
     padding: 3px;
     margin-left: 300px;
-
 }
+.deets, .list-group-item{
+    opacity: 0.8;
+}
+
