@@ -5,8 +5,8 @@ import {HttpClient} from '@angular/common/http';
 export class DetailspageService {
 
   private username: string;
-  private clientid = '97ad8e14c7e6a33245c6';
-  private clientsecret = '375f816175ae38c0b1fed8c03a6de70aa36ad2d1';
+  private clientid = '52aa4e174d40e0580474';
+  private clientsecret = '957370473fefe9f713e32ab59ce42fc421adb7cb';
 
   constructor(private http: HttpClient) {
       this.username = 'jamesandere';
