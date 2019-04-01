@@ -13,18 +13,10 @@ export class DetailspageService {
       this.username = 'jamesandere';
  }
  getprofileInfo(username) {
- 
+   console.log(this.username);
+   
    return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
 
  }
- getprofileRepos() {
-return this.http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
-
-
-   }
-
- updateprofile(username: string) {
-   this.username = username;
- }
-
+ 
 }
