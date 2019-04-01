@@ -7,16 +7,13 @@ import { DetailspageService} from './geet/detailspage.service';
 
 import { AppComponent } from './app.component';
 import { DetailspageComponent } from './detailspage/detailspage.component';
-import { InformationComponent } from './information/information.component';
-import { ReposComponent } from './repos/repos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailspageComponent,
-    InformationComponent,
-    ReposComponent
+    DetailspageComponent
+
   ],
   imports: [
     BrowserModule,

@@ -23,4 +23,6 @@ h1{
 .deets, .list-group-item{
     opacity: 0.8;
 }
-
+.stats>span{
+    margin: 5px;
+}

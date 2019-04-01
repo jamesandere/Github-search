@@ -9,7 +9,6 @@ export class DetailspageService {
   private clientsecret = '375f816175ae38c0b1fed8c03a6de70aa36ad2d1';
 
   constructor(private http: HttpClient) {
-      console.log('Ready for display');
       this.username = 'jamesandere';
  }
  getprofileInfo(username) {

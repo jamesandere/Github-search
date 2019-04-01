@@ -3,13 +3,13 @@
     <div class="col-md-7">
       <form (ngSubmit)='findprofile()' class="search-form">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search user or jump to..." [(ngModel)]="username"
+          <input type="text" class="form-control" placeholder="Search user ..." [(ngModel)]="username"
             name="username">
-          <button class="btn btn-success ok " type="submit">Search</button>
+          <button id="but" class="btn btn-success ok " type="submit">Search</button>
         </div>
       </form>
     </div>
-    <div class="row beast">
+ 
       <div class="col-md-12" id="hide">
         <div *ngIf="profile">
           <div class="panel panel-default">
@@ -20,7 +20,7 @@
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-4 me">
+                <div class="col-md-4 ">
                   <img class="img-circle img-responsive me" src="{{profile.avatar_url}}" >
                 </div>
                 <div class="col-md-4">
@@ -28,17 +28,17 @@
                     <li class="list-group-item"><strong>Username: </strong>{{profile.login}}</li>
 
                     <div class="stats">
-                      <span class="badge badge-secondary">{{profile.public_repos}} Public Repos</span> &nbsp;
-                      <span class="badge badge-primary">{{profile.public_gists}} Public Gists</span> &nbsp;
-                      <span class="badge badge-success">{{profile.followers}} Followers</span> &nbsp;
+                      <span class="badge badge-secondary">{{profile.public_repos}} Public Repos</span> 
+                      <span class="badge badge-primary">{{profile.public_gists}} Public Gists</span> 
+                      <span class="badge badge-success">{{profile.followers}} Followers</span> 
                       <span class="badge badge-info">{{profile.following}} Following</span>
                     </div>
                   </ul>
                 </div>
-        <div class="col-md-4 repo">
+        <div class="col-md-4 deets">
             <div class="card card2 card-default mt-5">
               <div class="card card2 card-heading pt-2">
-                <h3 class=" card2 card-title ml-5 ">Repos</h3>
+                <h3 class=" card2 card-title ml-5 ">Repositories</h3>
               </div>
               <div class="card2 card-body">
                 <div class="row">
