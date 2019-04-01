@@ -22,7 +22,7 @@ ngOnInit() {
 }
 
 findprofile() {
- this.detailspageServe.updateprofile(this.username);
+
  this.detailspageServe.getprofileInfo(this.username).subscribe(profile => {
    console.log(profile);
    this.profile = profile;
