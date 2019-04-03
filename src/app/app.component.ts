@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Githubsearch';
+  public ngOnInit(){
+    $(document).ready(function(){
+     $('#but').click(function(){
+       $('#land').hide();
+       $('.container-fluid').show();
+     })
+    });
+  }
 }
