@@ -8,11 +8,11 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   public ngOnInit(){
-    $(document).ready(function(){
-     $('#but').click(function(){
-       $('#land').hide();
-       $('.container-fluid').show();
-     })
-    });
+    // $(document).ready(function(){
+    //  $('#but0').click(function(){
+    //    $('#land').slideUp()
+    //    $('#det').show();
+    //  })
+    // });
   }
 }

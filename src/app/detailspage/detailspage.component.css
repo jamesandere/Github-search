@@ -26,3 +26,15 @@ h1{
 .stats>span{
     margin: 5px;
 }
+
+#link{
+    font-size: 30px;
+    color: white;
+}
+#link:hover{
+    text-decoration: none;
+    color: yellow;
+}
+/* #det{
+    display: none;
+} */

@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { DetailspageComponent } from './detailspage/detailspage.component';
 import { LandingComponent } from './landing/landing.component';
 import { RouterModule, Routes } from '@angular/router';
-import { DateCountPipe } from './date-count.pipe';
+import { UpperPipe } from './upper.pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { RoutingModule } from './routing/routing.module';
 
 const routes:Routes=[
   {path:"detailspage",component:DetailspageComponent},
@@ -20,14 +22,15 @@ const routes:Routes=[
     AppComponent,
     DetailspageComponent,
     LandingComponent,
-    DateCountPipe
-
+    UpperPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RoutingModule,
+    AppRoutingModule
   ],
   providers: [DetailspageService],
   bootstrap: [AppComponent]

@@ -1,11 +1,12 @@
-<div class="container-fluid">
+<div id="det" class="container-fluid">
  <h1>Github Search</h1>
+ <a id="link" routerLink='/home' routerLinkActive='active'>HOME</a>
     <div class="col-md-7">
       <form (ngSubmit)='findprofile()' class="search-form">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search user ..." [(ngModel)]="username"
             name="username">
-          <button id="but" class="btn btn-success ok " type="submit">Search</button>
+            <button id="but" class="btn btn-success ok " type="submit">Search</button>
         </div>
       </form>
     </div>
@@ -14,7 +15,7 @@
         <div *ngIf="profile">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h1>{{profile.login}}</h1>
+              <h1>{{profile.login | upper}}</h1>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -62,3 +63,6 @@
         </div>
       </div>
     </div> 
+</div>
+</div>
+</div>
